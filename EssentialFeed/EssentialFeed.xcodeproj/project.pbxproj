@@ -37,6 +37,7 @@
 		FAE86A672A3ED034003AFB9E /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A662A3ED034003AFB9E /* FeedCache.swift */; };
 		FAE86A6B2A3ED34B003AFB9E /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A6A2A3ED34B003AFB9E /* LoadFeedFromCacheUseCaseTests.swift */; };
 		FAE86A6D2A3ED398003AFB9E /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A6C2A3ED398003AFB9E /* FeedCachePolicy.swift */; };
+		FAE86A6F2A3F7633003AFB9E /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A6E2A3F7633003AFB9E /* ValidateFeedCacheUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		FAE86A662A3ED034003AFB9E /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		FAE86A6A2A3ED34B003AFB9E /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		FAE86A6C2A3ED398003AFB9E /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		FAE86A6E2A3F7633003AFB9E /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 				FAE86A612A3ECF4E003AFB9E /* Helpers */,
 				FAE86A5F2A3ECF11003AFB9E /* CacheFeedUseCaseTests.swift */,
 				FAE86A6A2A3ED34B003AFB9E /* LoadFeedFromCacheUseCaseTests.swift */,
+				FAE86A6E2A3F7633003AFB9E /* ValidateFeedCacheUseCaseTests.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE86A6F2A3F7633003AFB9E /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				FAE86A332A3E8B14003AFB9E /* SharedTestHelpers.swift in Sources */,
 				FAE86A382A3EC5B6003AFB9E /* FeedItemsMapperTests.swift in Sources */,
 				FAE86A6B2A3ED34B003AFB9E /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
