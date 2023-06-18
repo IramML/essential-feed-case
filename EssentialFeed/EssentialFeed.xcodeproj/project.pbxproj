@@ -10,6 +10,8 @@
 		FAE86A082A3E2C40003AFB9E /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE869FF2A3E2C40003AFB9E /* EssentialFeed.framework */; };
 		FAE86A0D2A3E2C40003AFB9E /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A0C2A3E2C40003AFB9E /* EssentialFeedTests.swift */; };
 		FAE86A0E2A3E2C40003AFB9E /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */; };
+		FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		FAE86A072A3E2C40003AFB9E /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE86A0C2A3E2C40003AFB9E /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
+		FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
+		FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		FAE86A012A3E2C40003AFB9E /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				FAE86A192A3E875B003AFB9E /* Feed */,
+				FAE86A1A2A3E8764003AFB9E /* ImageComments */,
 				FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */,
 			);
 			path = EssentialFeed;
@@ -80,6 +86,38 @@
 				FAE86A0C2A3E2C40003AFB9E /* EssentialFeedTests.swift */,
 			);
 			path = EssentialFeedTests;
+			sourceTree = "<group>";
+		};
+		FAE86A192A3E875B003AFB9E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A1B2A3E8773003AFB9E /* Domain */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FAE86A1A2A3E8764003AFB9E /* ImageComments */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A1C2A3E8777003AFB9E /* Domain */,
+			);
+			path = ImageComments;
+			sourceTree = "<group>";
+		};
+		FAE86A1B2A3E8773003AFB9E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FAE86A1C2A3E8777003AFB9E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +182,7 @@
 				TargetAttributes = {
 					FAE869FE2A3E2C40003AFB9E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					FAE86A062A3E2C40003AFB9E = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -191,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */,
+				FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +372,7 @@
 		FAE86A122A3E2C40003AFB9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -361,6 +403,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,6 +412,7 @@
 		FAE86A132A3E2C40003AFB9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -407,6 +451,7 @@
 		FAE86A152A3E2C40003AFB9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWAC9ZNNPB;
@@ -427,6 +472,7 @@
 		FAE86A162A3E2C40003AFB9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWAC9ZNNPB;
