@@ -52,6 +52,16 @@ final class CacheFeedUseCaseTests: XCTestCase {
             store.completeDeletion(with: deletionError)
         })
     }
+    
+    func test_save_failsOnInsertionError() {
+        let (sut, store) = makeSUT()
+        let insertionError = anyNSError()
+
+        expect(sut, toCompleteWithError: insertionError, when: {
+            store.completeDeletionSuccessfully()
+            store.completeInsertion(with: insertionError)
+        })
+    }
 
     // MARK: - Helpers
 
