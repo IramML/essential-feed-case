@@ -115,6 +115,7 @@
 				FAE86A2F2A3E8AA8003AFB9E /* Helpers */,
 				FAE86A282A3E8A31003AFB9E /* Shared */,
 				FAE86A342A3EC53D003AFB9E /* Feed */,
+				FAE86A502A3ECBB5003AFB9E /* ImageComments */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -253,7 +254,6 @@
 		FAE86A482A3EC9C2003AFB9E /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				FAE86A4C2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -262,6 +262,22 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A4A2A3ECA1B003AFB9E /* ImageCommentsMapper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAE86A502A3ECBB5003AFB9E /* ImageComments */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A512A3ECBBC003AFB9E /* API */,
+			);
+			path = ImageComments;
+			sourceTree = "<group>";
+		};
+		FAE86A512A3ECBBC003AFB9E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A4C2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
