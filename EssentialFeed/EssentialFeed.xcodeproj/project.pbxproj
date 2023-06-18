@@ -12,6 +12,7 @@
 		FAE86A0E2A3E2C40003AFB9E /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */; };
 		FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */; };
+		FAE86A242A3E8876003AFB9E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A232A3E8876003AFB9E /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		FAE86A0C2A3E2C40003AFB9E /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
+		FAE86A232A3E8876003AFB9E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		FAE86A012A3E2C40003AFB9E /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				FAE86A212A3E885D003AFB9E /* Shared */,
 				FAE86A192A3E875B003AFB9E /* Feed */,
 				FAE86A1A2A3E8764003AFB9E /* ImageComments */,
 				FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */,
@@ -118,6 +121,22 @@
 				FAE86A1F2A3E87C1003AFB9E /* ImageComment.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		FAE86A212A3E885D003AFB9E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A222A3E8865003AFB9E /* API */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FAE86A222A3E8865003AFB9E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A232A3E8876003AFB9E /* HTTPClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +251,7 @@
 			files = (
 				FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */,
 				FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */,
+				FAE86A242A3E8876003AFB9E /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
