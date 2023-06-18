@@ -35,6 +35,16 @@ extension LocalFeedLoader: FeedCache {
     }
 
     private func cache(_ feed: [FeedImage], with completion: @escaping (SaveResult) -> Void) {
-        fatalError("Not implemented")
+        store.insert(feed.toLocal(), timestamp: currentDate()) { [weak self] insertionResult in
+            guard self != nil else { return }
+
+            completion(insertionResult)
+        }
+    }
+}
+
+private extension Array where Element == FeedImage {
+    func toLocal() -> [LocalFeedImage] {
+        return map { LocalFeedImage(id: $0.id, description: $0.description, location: $0.location, url: $0.url) }
     }
 }
