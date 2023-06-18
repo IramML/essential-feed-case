@@ -28,6 +28,7 @@
 		FAE86A4D2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A4C2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift */; };
 		FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A522A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift */; };
 		FAE86A552A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A542A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift */; };
+		FAE86A5A2A3ECDF7003AFB9E /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FAE86A4C2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapperTests.swift; sourceTree = "<group>"; };
 		FAE86A522A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpoint.swift; sourceTree = "<group>"; };
 		FAE86A542A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpointTests.swift; sourceTree = "<group>"; };
+		FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 		FAE86A562A3ECD95003AFB9E /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */,
 				FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */,
 				FAE86A242A3E8876003AFB9E /* HTTPClient.swift in Sources */,
+				FAE86A5A2A3ECDF7003AFB9E /* LocalFeedImage.swift in Sources */,
 				FAE86A3E2A3EC828003AFB9E /* HTTPURLResponse+StatusCode.swift in Sources */,
 				FAE86A4B2A3ECA1B003AFB9E /* ImageCommentsMapper.swift in Sources */,
 				FAE86A272A3E8A11003AFB9E /* URLSessionHTTPClient.swift in Sources */,
