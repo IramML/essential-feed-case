@@ -29,6 +29,7 @@
 		FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A522A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift */; };
 		FAE86A552A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A542A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift */; };
 		FAE86A5A2A3ECDF7003AFB9E /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */; };
+		FAE86A5C2A3ECE85003AFB9E /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A5B2A3ECE85003AFB9E /* FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FAE86A522A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpoint.swift; sourceTree = "<group>"; };
 		FAE86A542A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpointTests.swift; sourceTree = "<group>"; };
 		FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
+		FAE86A5B2A3ECE85003AFB9E /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A592A3ECDF7003AFB9E /* LocalFeedImage.swift */,
+				FAE86A5B2A3ECE85003AFB9E /* FeedStore.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				FAE86A362A3EC565003AFB9E /* FeedItemsMapper.swift in Sources */,
 				FAE86A402A3EC895003AFB9E /* FeedImageDataMapper.swift in Sources */,
 				FAE86A452A3EC97F003AFB9E /* FeedEndpoint.swift in Sources */,
+				FAE86A5C2A3ECE85003AFB9E /* FeedStore.swift in Sources */,
 				FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */,
 				FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */,
 				FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */,
