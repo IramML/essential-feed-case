@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A1B2A3E8773003AFB9E /* Domain */,
-				FAE86A352A3EC565003AFB9E /* FeedItemsMapper.swift */,
+				FAE86A3B2A3EC7F5003AFB9E /* API */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -203,6 +203,14 @@
 				FAE86A372A3EC5B6003AFB9E /* FeedItemsMapperTests.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		FAE86A3B2A3EC7F5003AFB9E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAE86A352A3EC565003AFB9E /* FeedItemsMapper.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
