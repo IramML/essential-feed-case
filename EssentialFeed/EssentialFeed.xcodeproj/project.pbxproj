@@ -49,6 +49,7 @@
 		FAE86A8C2A3F8FBE003AFB9E /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A8B2A3F8FBE003AFB9E /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */; };
 		FAE86A8E2A3F8FC7003AFB9E /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A8D2A3F8FC7003AFB9E /* XCTestCase+FailableInsertFeedStoreSpecs.swift */; };
 		FAE86A902A3F8FD1003AFB9E /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A8F2A3F8FD1003AFB9E /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
+		FAE86A922A3F9082003AFB9E /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A912A3F9082003AFB9E /* CoreDataFeedStore+FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		FAE86A8B2A3F8FBE003AFB9E /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableRetrieveFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		FAE86A8D2A3F8FC7003AFB9E /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		FAE86A8F2A3F8FD1003AFB9E /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
+		FAE86A912A3F9082003AFB9E /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A802A3F8EE9003AFB9E /* CoreDataFeedStore.swift */,
+				FAE86A912A3F9082003AFB9E /* CoreDataFeedStore+FeedStore.swift */,
 				FAE86A822A3F8F11003AFB9E /* CoreDataHelpers.swift */,
 				FAE86A782A3F8E67003AFB9E /* ManagedCache.swift */,
 				FAE86A7A2A3F8E67003AFB9E /* ManagedFeedImage.swift */,
@@ -510,6 +513,7 @@
 				FAE86A5C2A3ECE85003AFB9E /* FeedStore.swift in Sources */,
 				FAE86A672A3ED034003AFB9E /* FeedCache.swift in Sources */,
 				FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */,
+				FAE86A922A3F9082003AFB9E /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */,
 				FAE86A7E2A3F8E67003AFB9E /* ManagedFeedImage.swift in Sources */,
 				FAE86A832A3F8F11003AFB9E /* CoreDataHelpers.swift in Sources */,
