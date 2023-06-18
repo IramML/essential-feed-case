@@ -28,9 +28,10 @@ public final class FeedItemsMapper {
     }
 
     public static func map(_ data: Data, from response: HTTPURLResponse) throws -> [FeedImage] {
-        guard response.statusCode == 200, ((try? JSONDecoder().decode(Root.self, from: data)) != nil) else {
+        guard response.statusCode == 200, let root = try? JSONDecoder().decode(Root.self, from: data) else {
             throw Error.invalidData
         }
-        return []
+        
+        return root.images
     }
 }
