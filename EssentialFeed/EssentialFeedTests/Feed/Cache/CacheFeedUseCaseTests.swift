@@ -14,6 +14,14 @@ final class CacheFeedUseCaseTests: XCTestCase {
 
         XCTAssertEqual(store.receivedMessages, [])
     }
+    
+    func test_save_requestsCacheDeletion() {
+        let (sut, store) = makeSUT()
+
+        sut.save(uniqueImageFeed().models) { _ in }
+
+        XCTAssertEqual(store.receivedMessages, [.deleteCachedFeed])
+    }
 
     // MARK: - Helpers
 

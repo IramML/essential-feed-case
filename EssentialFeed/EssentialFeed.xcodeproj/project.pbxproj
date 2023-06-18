@@ -33,6 +33,8 @@
 		FAE86A5E2A3ECEEA003AFB9E /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A5D2A3ECEEA003AFB9E /* LocalFeedLoader.swift */; };
 		FAE86A602A3ECF11003AFB9E /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A5F2A3ECF11003AFB9E /* CacheFeedUseCaseTests.swift */; };
 		FAE86A632A3ECF58003AFB9E /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A622A3ECF58003AFB9E /* FeedStoreSpy.swift */; };
+		FAE86A652A3ECFC5003AFB9E /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A642A3ECFC5003AFB9E /* FeedCacheTestHelpers.swift */; };
+		FAE86A672A3ED034003AFB9E /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86A662A3ED034003AFB9E /* FeedCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		FAE86A5D2A3ECEEA003AFB9E /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		FAE86A5F2A3ECF11003AFB9E /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		FAE86A622A3ECF58003AFB9E /* FeedStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpy.swift; sourceTree = "<group>"; };
+		FAE86A642A3ECFC5003AFB9E /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
+		FAE86A662A3ED034003AFB9E /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A1D2A3E8795003AFB9E /* FeedImage.swift */,
+				FAE86A662A3ED034003AFB9E /* FeedCache.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE86A622A3ECF58003AFB9E /* FeedStoreSpy.swift */,
+				FAE86A642A3ECFC5003AFB9E /* FeedCacheTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				FAE86A402A3EC895003AFB9E /* FeedImageDataMapper.swift in Sources */,
 				FAE86A452A3EC97F003AFB9E /* FeedEndpoint.swift in Sources */,
 				FAE86A5C2A3ECE85003AFB9E /* FeedStore.swift in Sources */,
+				FAE86A672A3ED034003AFB9E /* FeedCache.swift in Sources */,
 				FAE86A1E2A3E8795003AFB9E /* FeedImage.swift in Sources */,
 				FAE86A532A3ECBF6003AFB9E /* ImageCommentsEndpoint.swift in Sources */,
 				FAE86A202A3E87C1003AFB9E /* ImageComment.swift in Sources */,
@@ -453,6 +460,7 @@
 				FAE86A382A3EC5B6003AFB9E /* FeedItemsMapperTests.swift in Sources */,
 				FAE86A4D2A3ECA54003AFB9E /* ImageCommentsMapperTests.swift in Sources */,
 				FAE86A2B2A3E8A50003AFB9E /* URLSessionHTTPClientTests.swift in Sources */,
+				FAE86A652A3ECFC5003AFB9E /* FeedCacheTestHelpers.swift in Sources */,
 				FAE86A552A3ECC05003AFB9E /* ImageCommentsEndpointTests.swift in Sources */,
 				FAE86A472A3EC995003AFB9E /* FeedEndpointTests.swift in Sources */,
 				FAE86A2E2A3E8A8D003AFB9E /* URLProtocolStub.swift in Sources */,

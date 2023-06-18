@@ -16,3 +16,25 @@ public final class LocalFeedLoader {
         self.currentDate = currentDate
     }
 }
+
+extension LocalFeedLoader: FeedCache {
+    public typealias SaveResult = FeedCache.Result
+
+    public func save(_ feed: [FeedImage], completion: @escaping (SaveResult) -> Void) {
+        store.deleteCachedFeed { [weak self] deletionResult in
+            guard let self = self else { return }
+
+            switch deletionResult {
+            case .success:
+                self.cache(feed, with: completion)
+
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    private func cache(_ feed: [FeedImage], with completion: @escaping (SaveResult) -> Void) {
+        fatalError("Not implemented")
+    }
+}
