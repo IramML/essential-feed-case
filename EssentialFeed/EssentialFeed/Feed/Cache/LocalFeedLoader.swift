@@ -64,6 +64,20 @@ extension LocalFeedLoader {
     }
 }
 
+extension LocalFeedLoader {
+    public typealias ValidationResult = Result<Void, Error>
+
+    public func validateCache(completion: @escaping (ValidationResult) -> Void) {
+        store.retrieve { [weak self] result in
+            guard let self = self else { return }
+            
+            if case .failure = result {
+                self.store.deleteCachedFeed(completion: completion)
+            }
+        }
+    }
+}
+
 private extension Array where Element == FeedImage {
     func toLocal() -> [LocalFeedImage] {
         return map { LocalFeedImage(id: $0.id, description: $0.description, location: $0.location, url: $0.url) }
