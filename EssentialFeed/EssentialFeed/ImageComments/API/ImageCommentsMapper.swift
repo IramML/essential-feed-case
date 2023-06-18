@@ -35,10 +35,10 @@ public final class ImageCommentsMapper {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         
-        guard (200 ... 299).contains(response.statusCode), (try? decoder.decode(Root.self, from: data)) != nil else {
+        guard (200 ... 299).contains(response.statusCode), let root = try? decoder.decode(Root.self, from: data) else {
             throw Error.invalidData
         }
 
-        return []
+        return root.comments
     }
 }
