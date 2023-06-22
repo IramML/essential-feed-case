@@ -120,6 +120,7 @@
 		FA7994A22A43D52F00B3E362 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ImageComments.strings; sourceTree = "<group>"; };
 		FA7994A42A43D53000B3E362 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/ImageComments.strings"; sourceTree = "<group>"; };
 		FA7994A52A43D56F00B3E362 /* ImageCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsViewModel.swift; sourceTree = "<group>"; };
+		FA7994A72A43D68A00B3E362 /* CI_iOS testplan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CI_iOS testplan.xctestplan"; path = "TestPlan/CI_iOS testplan.xctestplan"; sourceTree = SOURCE_ROOT; };
 		FAE869FF2A3E2C40003AFB9E /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE86A022A3E2C40003AFB9E /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		FAE86A072A3E2C40003AFB9E /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,9 +255,18 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		FA7994A82A43D6A500B3E362 /* TestPlan */ = {
+			isa = PBXGroup;
+			children = (
+				FA7994A72A43D68A00B3E362 /* CI_iOS testplan.xctestplan */,
+			);
+			path = TestPlan;
+			sourceTree = "<group>";
+		};
 		FAE869F52A3E2C40003AFB9E = {
 			isa = PBXGroup;
 			children = (
+				FA7994A82A43D6A500B3E362 /* TestPlan */,
 				FAE86A012A3E2C40003AFB9E /* EssentialFeed */,
 				FAE86A0B2A3E2C40003AFB9E /* EssentialFeedTests */,
 				FAE86A002A3E2C40003AFB9E /* Products */,
