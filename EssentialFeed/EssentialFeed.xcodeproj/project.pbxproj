@@ -32,6 +32,8 @@
 		FA4492FD2A44178400287065 /* FEED_WITH_CONTENT_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4492FA2A44178400287065 /* FEED_WITH_CONTENT_dark.png */; };
 		FA4492FE2A44178400287065 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4492FB2A44178400287065 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */; };
 		FA4492FF2A44178400287065 /* FEED_WITH_CONTENT_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4492FC2A44178400287065 /* FEED_WITH_CONTENT_light.png */; };
+		FA4493022A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4493002A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */; };
+		FA4493032A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4493012A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */; };
 		FA79946C2A43C5F200B3E362 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79946B2A43C5F200B3E362 /* LoadResourcePresenter.swift */; };
 		FA7994702A43C61D00B3E362 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79946F2A43C61D00B3E362 /* LoadResourcePresenterTests.swift */; };
 		FA7994722A43C74900B3E362 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7994712A43C74900B3E362 /* ResourceLoadingView.swift */; };
@@ -151,6 +153,8 @@
 		FA4492FA2A44178400287065 /* FEED_WITH_CONTENT_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_dark.png; sourceTree = "<group>"; };
 		FA4492FB2A44178400287065 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		FA4492FC2A44178400287065 /* FEED_WITH_CONTENT_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light.png; sourceTree = "<group>"; };
+		FA4493002A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_dark.png; sourceTree = "<group>"; };
+		FA4493012A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_light.png; sourceTree = "<group>"; };
 		FA79946B2A43C5F200B3E362 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
 		FA79946F2A43C61D00B3E362 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		FA7994712A43C74900B3E362 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
@@ -324,6 +328,8 @@
 				FA4492FA2A44178400287065 /* FEED_WITH_CONTENT_dark.png */,
 				FA4492FB2A44178400287065 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */,
 				FA4492FC2A44178400287065 /* FEED_WITH_CONTENT_light.png */,
+				FA4493002A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */,
+				FA4493012A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */,
 			);
 			path = snapshots;
 			sourceTree = "<group>";
@@ -921,8 +927,10 @@
 				FA4492D62A44122400287065 /* EMPTY_LIST_light.png in Resources */,
 				FA4492FD2A44178400287065 /* FEED_WITH_CONTENT_dark.png in Resources */,
 				FA4492FE2A44178400287065 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */,
+				FA4493022A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */,
 				FA4492E02A44145D00287065 /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */,
 				FA4492E12A44145D00287065 /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */,
+				FA4493032A44184A00287065 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */,
 				FA4492D52A44122400287065 /* EMPTY_LIST_dark.png in Resources */,
 				FA4492FF2A44178400287065 /* FEED_WITH_CONTENT_light.png in Resources */,
 				FA4492DF2A44145D00287065 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */,
