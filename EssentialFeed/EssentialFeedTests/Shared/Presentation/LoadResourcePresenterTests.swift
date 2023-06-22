@@ -14,6 +14,17 @@ final class LoadResourcePresenterTests: XCTestCase {
 
         XCTAssertTrue(view.messages.isEmpty, "Expected no view messages")
     }
+    
+    func test_didStartLoading_displaysNoErrorMessageAndStartsLoading() {
+        let (sut, view) = makeSUT()
+
+        sut.didStartLoading()
+
+        XCTAssertEqual(view.messages, [
+            .display(errorMessage: .none),
+            .display(isLoading: true)
+        ])
+    }
 
     private typealias SUT = LoadResourcePresenter<String, ViewSpy>
 
@@ -23,13 +34,13 @@ final class LoadResourcePresenterTests: XCTestCase {
         line: UInt = #line
     ) -> (sut: SUT, view: ViewSpy) {
         let view = ViewSpy()
-        let sut = SUT(resourceView: view, mapper: mapper)
+        let sut = SUT(resourceView: view, loadingView: view, errorView: view, mapper: mapper)
         trackForMemoryLeaks(view, file: file, line: line)
         trackForMemoryLeaks(sut, file: file, line: line)
         return (sut, view)
     }
     
-    private class ViewSpy: ResourceView {
+    private class ViewSpy: ResourceView, ResourceLoadingView, ResourceErrorView {
         typealias ResourceViewModel = String
 
         enum Message: Hashable {
@@ -39,6 +50,14 @@ final class LoadResourcePresenterTests: XCTestCase {
         }
 
         private(set) var messages = Set<Message>()
+        
+        func display(_ viewModel: ResourceErrorViewModel) {
+            messages.insert(.display(errorMessage: viewModel.message))
+        }
+        
+        func display(_ viewModel: ResourceLoadingViewModel) {
+            messages.insert(.display(isLoading: viewModel.isLoading))
+        }
 
         func display(_ viewModel: String) {
             messages.insert(.display(resourceViewModel: viewModel))
