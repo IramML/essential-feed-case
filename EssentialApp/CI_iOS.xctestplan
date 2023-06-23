@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "6A54B7B3-8239-4AF4-B982-629CB28C5FCF",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/EssentialFeed\/EssentialFeed.xcodeproj",
+        "identifier" : "FAE86A062A3E2C40003AFB9E",
+        "name" : "EssentialFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/EssentialFeed\/EssentialFeed.xcodeproj",
+        "identifier" : "FA7994B42A43F4C800B3E362",
+        "name" : "EssentialFeediOSTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialApp.xcodeproj",
+        "identifier" : "FA44933B2A441F0F00287065",
+        "name" : "EssentialAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

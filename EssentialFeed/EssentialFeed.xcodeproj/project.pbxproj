@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1775DB2A45238300F6338C /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */; };
 		FA3C6A6B2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6A2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift */; };
 		FA3C6A6D2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6C2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift */; };
 		FA3C6A6F2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6E2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
@@ -142,6 +143,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		FA3C6A6A2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		FA3C6A6C2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
 		FA3C6A6E2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
@@ -200,7 +202,6 @@
 		FA7994A22A43D52F00B3E362 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ImageComments.strings; sourceTree = "<group>"; };
 		FA7994A42A43D53000B3E362 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/ImageComments.strings"; sourceTree = "<group>"; };
 		FA7994A52A43D56F00B3E362 /* ImageCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsViewModel.swift; sourceTree = "<group>"; };
-		FA7994A72A43D68A00B3E362 /* CI_iOS testplan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CI_iOS testplan.xctestplan"; path = "TestPlan/CI_iOS testplan.xctestplan"; sourceTree = SOURCE_ROOT; };
 		FA7994AE2A43F4C800B3E362 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7994B52A43F4C800B3E362 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7994C32A43F61F00B3E362 /* CI_macOS testplan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CI_macOS testplan.xctestplan"; sourceTree = "<group>"; };
@@ -328,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4492D82A44134D00287065 /* UIView+Container.swift */,
+				FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */,
 				FA4492DA2A44137500287065 /* UITableView+HeaderSizing.swift */,
 				FA4492F82A44171B00287065 /* UITableView+Dequeueing.swift */,
 			);
@@ -509,7 +511,6 @@
 		FA7994A82A43D6A500B3E362 /* TestPlan */ = {
 			isa = PBXGroup;
 			children = (
-				FA7994A72A43D68A00B3E362 /* CI_iOS testplan.xctestplan */,
 				FA7994C32A43F61F00B3E362 /* CI_macOS testplan.xctestplan */,
 			);
 			path = TestPlan;
@@ -1048,6 +1049,7 @@
 				FA4492F72A4416EA00287065 /* UIImageView+Animations.swift in Sources */,
 				FABE119F2A440D3300471AA3 /* ListViewController.swift in Sources */,
 				FA4492D22A4411CF00287065 /* ErrorView.swift in Sources */,
+				FA1775DB2A45238300F6338C /* UIRefreshControl+Helpers.swift in Sources */,
 				FA4492CD2A44103B00287065 /* CellController.swift in Sources */,
 				FA4492DB2A44137500287065 /* UITableView+HeaderSizing.swift in Sources */,
 				FA4492EA2A44153A00287065 /* FeedImageCellController.swift in Sources */,
