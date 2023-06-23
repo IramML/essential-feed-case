@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1775DB2A45238300F6338C /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */; };
 		FA3C6A6B2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6A2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift */; };
 		FA3C6A6D2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6C2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift */; };
 		FA3C6A6F2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A6E2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
@@ -142,6 +143,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		FA3C6A6A2A400F3D00FF1CFB /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		FA3C6A6C2A4012E300FF1CFB /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
 		FA3C6A6E2A40136600FF1CFB /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4492D82A44134D00287065 /* UIView+Container.swift */,
+				FA1775DA2A45238300F6338C /* UIRefreshControl+Helpers.swift */,
 				FA4492DA2A44137500287065 /* UITableView+HeaderSizing.swift */,
 				FA4492F82A44171B00287065 /* UITableView+Dequeueing.swift */,
 			);
@@ -1046,6 +1049,7 @@
 				FA4492F72A4416EA00287065 /* UIImageView+Animations.swift in Sources */,
 				FABE119F2A440D3300471AA3 /* ListViewController.swift in Sources */,
 				FA4492D22A4411CF00287065 /* ErrorView.swift in Sources */,
+				FA1775DB2A45238300F6338C /* UIRefreshControl+Helpers.swift in Sources */,
 				FA4492CD2A44103B00287065 /* CellController.swift in Sources */,
 				FA4492DB2A44137500287065 /* UITableView+HeaderSizing.swift in Sources */,
 				FA4492EA2A44153A00287065 /* FeedImageCellController.swift in Sources */,
