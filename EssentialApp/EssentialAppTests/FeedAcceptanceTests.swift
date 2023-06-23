@@ -38,6 +38,14 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertEqual(feed.numberOfRenderedFeedImageViews(), 0)
     }
     
+    func test_onEnteringBackground_deletesExpiredFeedCache() throws {
+        let store = InMemoryFeedStore.withExpiredFeedCache
+
+        try enterBackground(with: store)
+
+        XCTAssertNil(store.feedCache, "Expected to delete expired cache")
+    }
+    
     // MARK: - Helpers
 
     private func launch(
@@ -50,6 +58,14 @@ class FeedAcceptanceTests: XCTestCase {
 
         let nav = sut.window?.rootViewController as? UINavigationController
         return nav?.topViewController as! ListViewController
+    }
+    
+    private func enterBackground(with store: InMemoryFeedStore) throws {
+        let sut = SceneDelegate(httpClient: HTTPClientStub.offline, store: store)
+
+        let sceneClass = NSClassFromString("UIScene") as? NSObject.Type
+        let scene = try XCTUnwrap(sceneClass?.init() as? UIScene)
+        sut.sceneWillResignActive(scene)
     }
     
     private func response(for url: URL) -> (Data, HTTPURLResponse) {
