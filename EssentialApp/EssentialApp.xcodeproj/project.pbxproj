@@ -35,6 +35,7 @@
 		FA9066CB2A456A24000B4F24 /* ImageCommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9066CA2A456A24000B4F24 /* ImageCommentsUIIntegrationTests.swift */; };
 		FA9066CD2A456A51000B4F24 /* ImageCommentsUIIntegrationTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9066CC2A456A51000B4F24 /* ImageCommentsUIIntegrationTests+LoaderSpy.swift */; };
 		FA9066CF2A456AA5000B4F24 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9066CE2A456AA5000B4F24 /* CommentsUIComposer.swift */; };
+		FA9066D32A456B9C000B4F24 /* CommentsViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9066D22A456B9C000B4F24 /* CommentsViewAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		FA9066CA2A456A24000B4F24 /* ImageCommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		FA9066CC2A456A51000B4F24 /* ImageCommentsUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCommentsUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		FA9066CE2A456AA5000B4F24 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
+		FA9066D22A456B9C000B4F24 /* CommentsViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				FA1775D12A451FD800F6338C /* LoadResourcePresentationAdapter.swift */,
 				FA1775D52A45203B00F6338C /* FeedViewAdapter.swift */,
 				FA9066CE2A456AA5000B4F24 /* CommentsUIComposer.swift */,
+				FA9066D22A456B9C000B4F24 /* CommentsViewAdapter.swift */,
 				FA4493372A441F0F00287065 /* Info.plist */,
 				FA4493322A441F0F00287065 /* Assets.xcassets */,
 				FA4493342A441F0F00287065 /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				FA44932A2A441F0D00287065 /* AppDelegate.swift in Sources */,
 				FA1775D22A451FD800F6338C /* LoadResourcePresentationAdapter.swift in Sources */,
 				FA1775D02A451FC100F6338C /* FeedUIComposer.swift in Sources */,
+				FA9066D32A456B9C000B4F24 /* CommentsViewAdapter.swift in Sources */,
 				FA1775D42A451FFE00F6338C /* CombineHelpers.swift in Sources */,
 				FA1775D62A45203B00F6338C /* FeedViewAdapter.swift in Sources */,
 				FA1775D92A45205A00F6338C /* WeakRefVirtualProxy.swift in Sources */,
