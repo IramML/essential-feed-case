@@ -26,6 +26,8 @@
 		FA1775F22A45644700F6338C /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775F12A45644700F6338C /* SharedTestHelpers.swift */; };
 		FA1775F42A45646E00F6338C /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775F32A45646E00F6338C /* XCTestCase+MemoryLeakTracking.swift */; };
 		FA1775F62A4564C100F6338C /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775F52A4564C100F6338C /* FeedUIIntegrationTests+LoaderSpy.swift */; };
+		FA1775F82A4566D100F6338C /* FeedUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775F72A4566D100F6338C /* FeedUIIntegrationTests+Assertions.swift */; };
+		FA1775FA2A4566F900F6338C /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775F92A4566F900F6338C /* UIView+TestHelpers.swift */; };
 		FA44932A2A441F0D00287065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4493292A441F0D00287065 /* AppDelegate.swift */; };
 		FA44932C2A441F0D00287065 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44932B2A441F0D00287065 /* SceneDelegate.swift */; };
 		FA4493332A441F0F00287065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4493322A441F0F00287065 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		FA1775F12A45644700F6338C /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		FA1775F32A45646E00F6338C /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		FA1775F52A4564C100F6338C /* FeedUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
+		FA1775F72A4566D100F6338C /* FeedUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
+		FA1775F92A4566F900F6338C /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		FA4493262A441F0D00287065 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4493292A441F0D00287065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA44932B2A441F0D00287065 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,9 +100,11 @@
 				FA1775E12A4524E500F6338C /* UIRefreshControl+TestHelpers.swift */,
 				FA1775E32A45250A00F6338C /* UIButton+TestHelpers.swift */,
 				FA1775E52A45252600F6338C /* UIControl+TestHelpers.swift */,
+				FA1775F92A4566F900F6338C /* UIView+TestHelpers.swift */,
 				FA1775EB2A4525EB00F6338C /* FeedImageCell+TestHelpers.swift */,
 				FA1775F52A4564C100F6338C /* FeedUIIntegrationTests+LoaderSpy.swift */,
 				FA1775DF2A4524C600F6338C /* ListViewController+TestHelpers.swift */,
+				FA1775F72A4566D100F6338C /* FeedUIIntegrationTests+Assertions.swift */,
 				FA1775F32A45646E00F6338C /* XCTestCase+MemoryLeakTracking.swift */,
 				FA1775F12A45644700F6338C /* SharedTestHelpers.swift */,
 				FA1775E72A45254D00F6338C /* HTTPClientStub.swift */,
@@ -271,11 +277,13 @@
 				FA1775E02A4524C600F6338C /* ListViewController+TestHelpers.swift in Sources */,
 				FA1775E42A45250A00F6338C /* UIButton+TestHelpers.swift in Sources */,
 				FA1775E22A4524E500F6338C /* UIRefreshControl+TestHelpers.swift in Sources */,
+				FA1775F82A4566D100F6338C /* FeedUIIntegrationTests+Assertions.swift in Sources */,
 				FA1775EE2A45269200F6338C /* UIImage+TestHelpers.swift in Sources */,
 				FA1775EA2A45257500F6338C /* InMemoryFeedStore.swift in Sources */,
 				FA1775F42A45646E00F6338C /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				FA1775E62A45252600F6338C /* UIControl+TestHelpers.swift in Sources */,
 				FA1775DD2A45247800F6338C /* FeedAcceptanceTests.swift in Sources */,
+				FA1775FA2A4566F900F6338C /* UIView+TestHelpers.swift in Sources */,
 				FA1775CE2A451C5A00F6338C /* SceneDelegateTests.swift in Sources */,
 				FA1775F22A45644700F6338C /* SharedTestHelpers.swift in Sources */,
 				FA1775F02A45640400F6338C /* FeedUIIntegrationTests.swift in Sources */,
