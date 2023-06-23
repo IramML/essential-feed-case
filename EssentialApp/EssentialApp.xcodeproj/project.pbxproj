@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FA1775CE2A451C5A00F6338C /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775CD2A451C5A00F6338C /* SceneDelegateTests.swift */; };
+		FA1775D02A451FC100F6338C /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775CF2A451FC100F6338C /* FeedUIComposer.swift */; };
+		FA1775D22A451FD800F6338C /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775D12A451FD800F6338C /* LoadResourcePresentationAdapter.swift */; };
+		FA1775D42A451FFE00F6338C /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775D32A451FFE00F6338C /* CombineHelpers.swift */; };
+		FA1775D62A45203B00F6338C /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775D52A45203B00F6338C /* FeedViewAdapter.swift */; };
+		FA1775D92A45205A00F6338C /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1775D82A45205A00F6338C /* WeakRefVirtualProxy.swift */; };
 		FA44932A2A441F0D00287065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4493292A441F0D00287065 /* AppDelegate.swift */; };
 		FA44932C2A441F0D00287065 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44932B2A441F0D00287065 /* SceneDelegate.swift */; };
 		FA4493332A441F0F00287065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4493322A441F0F00287065 /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 
 /* Begin PBXFileReference section */
 		FA1775CD2A451C5A00F6338C /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
+		FA1775CF2A451FC100F6338C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
+		FA1775D12A451FD800F6338C /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
+		FA1775D32A451FFE00F6338C /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		FA1775D52A45203B00F6338C /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
+		FA1775D82A45205A00F6338C /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		FA4493262A441F0D00287065 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4493292A441F0D00287065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA44932B2A441F0D00287065 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +86,11 @@
 			children = (
 				FA4493292A441F0D00287065 /* AppDelegate.swift */,
 				FA44932B2A441F0D00287065 /* SceneDelegate.swift */,
+				FA1775D32A451FFE00F6338C /* CombineHelpers.swift */,
+				FA1775CF2A451FC100F6338C /* FeedUIComposer.swift */,
+				FA1775D82A45205A00F6338C /* WeakRefVirtualProxy.swift */,
+				FA1775D12A451FD800F6338C /* LoadResourcePresentationAdapter.swift */,
+				FA1775D52A45203B00F6338C /* FeedViewAdapter.swift */,
 				FA4493322A441F0F00287065 /* Assets.xcassets */,
 				FA4493342A441F0F00287065 /* LaunchScreen.storyboard */,
 				FA4493372A441F0F00287065 /* Info.plist */,
@@ -192,6 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA44932A2A441F0D00287065 /* AppDelegate.swift in Sources */,
+				FA1775D22A451FD800F6338C /* LoadResourcePresentationAdapter.swift in Sources */,
+				FA1775D02A451FC100F6338C /* FeedUIComposer.swift in Sources */,
+				FA1775D42A451FFE00F6338C /* CombineHelpers.swift in Sources */,
+				FA1775D62A45203B00F6338C /* FeedViewAdapter.swift in Sources */,
+				FA1775D92A45205A00F6338C /* WeakRefVirtualProxy.swift in Sources */,
 				FA44932C2A441F0D00287065 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +372,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -381,7 +400,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
