@@ -37,6 +37,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             imageLoader: makeLocalImageLoaderWithRemoteFallback,
             selection: showComments))
 
+    
+    convenience init(httpClient: HTTPClient, store: FeedStore & FeedImageDataStore) {
+        self.init()
+        self.httpClient = httpClient
+        self.store = store
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
