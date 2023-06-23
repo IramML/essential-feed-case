@@ -46,6 +46,14 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertNil(store.feedCache, "Expected to delete expired cache")
     }
     
+    func test_onEnteringBackground_keepsNonExpiredFeedCache() throws {
+        let store = InMemoryFeedStore.withNonExpiredFeedCache
+
+        try enterBackground(with: store)
+
+        XCTAssertNotNil(store.feedCache, "Expected to keep non-expired cache")
+    }
+    
     // MARK: - Helpers
 
     private func launch(
